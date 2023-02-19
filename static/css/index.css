@@ -1,0 +1,485 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --color_principal: rgba(235, 197, 156, 0.769);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(208, 169, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-principal {
+    width: 62%;
+    height: 90%;
+    background-color: rgb(227, 221, 219);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px -12px;
+}
+
+nav {
+    background-color: rgb(226, 225, 220);
+    width: 100%;
+    height: 9%;
+    padding: 0% 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+#logo {
+    width: 60px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+
+nav ul {
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    /*  background-color: rebeccapurple; */
+}
+
+nav a {
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(34, 35, 36);
+    opacity: .8;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+}
+
+nav a:hover {
+    transition: all .3s;
+    color: black;
+    opacity: 1;
+}
+
+
+
+
+.contenedor-decoracion {
+    width: 100%;
+    height: 91%;
+    /* background-color: aqua; */
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagen {
+    width: 64%;
+    height: 100%;
+
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 20px 0;
+}
+
+
+.texto {
+    width: 36%;
+    height: 100%;
+    /*     background-color: rgb(40, 126, 126); */
+    border-radius: 0 0 0 20px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 24px;
+    text-align: justify;
+}
+
+.texto h1 {
+    color: rgb(52, 54, 55);
+    font-size: 44px;
+}
+
+.texto p {
+    opacity: .6;
+}
+
+.texto a {
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(195, 143, 90, 0.944);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto a:hover {
+    background-color: rgba(85, 88, 88, 0.839);
+    transition: all .4s;
+}
+
+
+@media (max-width:1000px) {
+    .texto h1{
+        font-size: 30px;
+    }
+    .texto p{
+        font-size: 14px;
+    }
+}
+@media (max-width:930px) {
+    nav{
+        padding: 0px;
+    }
+    nav ul{
+        width: 84%;
+    }
+}
+@media (max-width:780px) {
+    nav a{
+        font-size: 14px;
+    }
+    .texto h1{
+        font-size: 26px;
+    }
+    .texto p{
+        font-size: 10px;
+    }
+    .imagen{
+        width: 100%;
+        height: 40%;
+        /* background-color: aqua; */
+    }
+    .imagen img{
+        object-fit: contain;
+    }
+    .contenedor-decoracion{
+        flex-direction: column-reverse;
+    }
+    .texto{
+        width: 90%;
+    }
+    .texto h1{
+        font-size: 24px;
+    }
+    .texto p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ SECCION DE ABOUT --------------------------- */
+
+
+.contenedor-about-primero {
+    width: 100%;
+    height: 91%;
+    /* background-color: aqua; */
+    display: flex;
+
+}
+
+.contenedor-text {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+    color: rgb(69, 65, 60);
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.contenedor-text>h1 {
+    animation: efectoprimero 4s linear infinite alternate;
+    opacity: .8;
+}
+.contenedor-text p{
+    font-size: 20px;
+    height: 200px;
+    text-align: center;
+    /* background-color: antiquewhite; */
+}
+
+@keyframes efectoprimero {
+    from {
+        transform: rotate(-30deg);
+        color: rgb(23, 25, 26);
+        font-weight: 900;
+    }
+
+    to {
+        transform: rotate(30deg);
+       
+    }
+
+}
+
+
+
+.contenedor-clippy {
+    width: 50%;
+    height: 100%;
+    /* background-color: rebeccapurple; */
+
+
+
+}
+
+.contenedor-clippy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+@media (max-width:1200px) {
+    .contenedor-text h1{
+        font-size: 36px;
+    }
+    .contenedor-text p{
+        font-size: 16px;
+    }
+}
+@media (max-width:700px) {
+    .contenedor-text h1{
+        font-size: 30px;
+    }
+    .contenedor-text p{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------ SECCION DE SERVICIOS --------------------------- */
+
+.contenedor-servicios{
+    width: 100%;
+    height: 91%;
+    /* background-color: rebeccapurple; */
+}
+
+.contenedores-principales{
+    width: 100%;
+    height: 33.3%;
+}
+
+.primero{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.servicio-uno, .servicio-dos, .servicio-tres{
+    width: 30%;
+    height: 100%;
+    background-color: aliceblue;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px -4px;
+    background-color: rgba(240, 248, 255, 0.577);
+    
+}
+
+.servicio-uno:hover::after, .servicio-dos:hover::after, .servicio-tres:hover::after{
+    position:absolute;
+    top: 0;
+    left: 0;
+    content: "Hola";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 43, 45, 0.772);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+}
+.servicio-uno:hover::after{
+    content: "Instalacion y activacion de Windows";
+    color: white;
+    font-size: 20px;
+}
+.servicio-dos:hover::after{
+    content: "Instalacion y activacion de office";
+    color: white;
+    font-size: 20px;
+}
+.servicio-tres:hover::after{
+    content: "Instalacion de antivirus";
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.segundo{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.servicio-cuatro{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.577);
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px -4px;
+}
+
+.servicio-cuatro:hover::after{
+    position:absolute;
+    top: 0;
+    left: 0;
+    content: "Instalacion de otro sistema operativo";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 43, 45, 0.772);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Shantell Sans', cursive;
+}
+
+
+
+.tercero{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+.servicio-cinco, .servicio-seis, .servicio-siete{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.577);
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px -4px;
+}
+
+.servicio-cinco:hover::after, .servicio-seis:hover::after, .servicio-siete:hover::after{
+    position:absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 43, 45, 0.772);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+}
+.servicio-cinco:hover::after{
+    content: "Mantenimiento";
+    color: white;
+    font-size: 20px;
+}
+.servicio-seis:hover::after{
+    color: white;
+    font-size: 20px;
+    content: "Maquetacion y programacion de Landing pages para uso personal o de tu negocio";
+}
+.servicio-siete:hover::after{
+    content: "Formateo y optimizacion de tu PC";
+    color: white;
+    font-size: 20px;
+}
+
+
+.servicio-uno img,.servicio-dos img,.servicio-tres img,.servicio-cuatro img,.servicio-cinco img,.servicio-seis img,.servicio-siete img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width:1240px) {
+    .servicio-uno:hover::after, .servicio-dos:hover::after, .servicio-tres:hover::after, .servicio-cuatro:hover::after, .servicio-cinco:hover::after, .servicio-seis:hover::after, .servicio-siete:hover::after{
+        font-size: 16px;
+    }
+}
+@media (max-width:740px) {
+    .servicio-uno:hover::after, .servicio-dos:hover::after, .servicio-tres:hover::after, .servicio-cuatro:hover::after, .servicio-cinco:hover::after, .servicio-seis:hover::after, .servicio-siete:hover::after{
+        font-size: 12px;
+    }
+}
