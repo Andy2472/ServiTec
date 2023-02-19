@@ -1,0 +1,40 @@
+{%extends 'layout.html'%}
+
+{%block content%}
+
+<div class="contenedor-servicios">
+    <div class="contenedores-principales primero">
+        <div class="servicio-uno">
+            <img src="{{ url_for('static', filename='imagenes/windows.webp') }}" alt="">
+        </div>
+        <div class="servicio-dos">
+            <img src="{{ url_for('static', filename='imagenes/office.png') }}" alt="">
+        </div>
+        <div class="servicio-tres">
+            <img src="{{ url_for('static', filename='imagenes/antivirus.png') }}" alt="">
+        </div>
+    </div>
+
+    <div class="contenedores-principales segundo">
+        <div class="servicio-cuatro">
+            <img src="{{ url_for('static', filename='imagenes/linux y windows.png') }}" alt="">
+        </div>
+    </div>
+
+    <div class="contenedores-principales tercero">
+        <div class="servicio-cinco">
+            <img src="{{ url_for('static', filename='imagenes/mantenimiento.png') }}" alt="">
+        </div>
+        <div class="servicio-seis">
+            <img src="{{ url_for('static', filename='imagenes/web-design.svg') }}" alt="">
+        </div>
+        <div class="servicio-siete">
+            <img src="{{ url_for('static', filename='imagenes/optimizacion.webp') }}" alt="">
+        </div>
+    </div>
+
+</div>
+<script>
+    alert("Para saber informacion, presiona en aceptar, y luego presiona una imagen");
+</script>
+{%endblock%}
